@@ -18,9 +18,13 @@ export default function Login({ setToken }) {
     const data = await res.json();
 
     if (data.token) {
-      localStorage.setItem("token", data.token);
-      setToken(data.token);
+      // localStorage.setItem("token", data.token);
+      // setToken(data.token);
+      let token = data.token;
+      // chrome?.storage?.local?.set({ token: data.token });
       navigate("/dashboard");
+      console.log("Token to be saved:", token);
+      window.postMessage({ type: "SAVE_TOKEN", token }, "*");
     } else {
       alert(data.message || "Login failed");
     }

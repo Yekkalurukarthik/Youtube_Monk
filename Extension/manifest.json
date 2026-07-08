@@ -4,15 +4,20 @@
     "version": "1.0",
     "description": "Hide distratciton on Youtube",
     "permissions": [
-        "storage"
+        "storage",
+        "tabs"
     ],
+    "background": {
+        "service_worker": "background.js"
+    }, 
     "action": {
         "default_popup": "popup.html"
     },
     "content_scripts": [
         {
             "matches": [
-                "*://*.youtube.com/*"
+                "*://*.youtube.com/*",
+                  "http://localhost:5173/*"
             ],
             "js": [
                 "content.js"
