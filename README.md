@@ -64,14 +64,7 @@ youtube-monk/
 │
 ├── background.js
 ├── content.js
-├── popup.html
-├── popup.js
-├── popup.css
 ├── manifest.json
-├── icons/
-│   ├── icon16.png
-│   ├── icon48.png
-│   └── icon128.png
 └── README.md
 ```
 
@@ -143,44 +136,13 @@ The extension scans video titles and hides videos containing predefined entertai
 - 📅 Focus history dashboard
 - ☁️ User authentication
 - 📈 Productivity analytics
-- 🎯 Pomodoro mode
 - 🔔 Desktop notifications
 - 🌙 Dark/Light themes
-- 📱 Cross-device sync
-- 🤖 AI-based distraction detection
 
----
 
-## 🤝 Contributing
+## 📄 Author
 
-Contributions are welcome!
-
-1. Fork the repository.
-2. Create a new feature branch.
-
-```bash
-git checkout -b feature-name
-```
-
-3. Commit your changes.
-
-```bash
-git commit -m "Add feature"
-```
-
-4. Push to your branch.
-
-```bash
-git push origin feature-name
-```
-
-5. Open a Pull Request.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
+This project is made by Karthik Yekkaluru
 
 ---
 
